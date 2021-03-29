@@ -1,0 +1,22 @@
+{
+	"getId": (snapMap,classId, label) => snapMap.filter(x => x.class_id == classId && (label != null ? x.property_map.info.label.value == label : true)).keys()[0],
+	"getIds": (snapMap,classId) => snapMap.filter(x => x.class_id == classId).keys(),
+	"getSnapIterator": (nIter) => this.snapIter({},nIter,[]),
+	"snapIter": (iterObj, nIter, arCont) => nIter > 1 ? arCont.concat(iterObj).concat(this.snapIter(iterObj,nIter-1,arCont)) : arCont.concat(iterObj),
+
+	"etc":
+	{
+		"tree":
+		{
+			"checkLevel": (doc) => doc.filter((value,key) => key.toLowerCase().contains('original')).values().length,
+			"getParent": (doc) => doc[this.getOgPath(doc)].pipe.name,
+			"getOgPath": (doc) => this.checkLevel(doc) == 1 ? 'original' + this.ogPathBuilder('',this.checkLevel(doc)).split('_').reverse().join('_') : 'original_' + this.ogPathBuilder('',this.checkLevel(doc)).split('_').reverse().join('_').slice(0,-1),
+			"ogPathBuilder": (ogStr,level) => level > 0 ? this.ogPathBuilder(ogStr + this.formatLevel(level),(level - 1)) : ogStr,
+			"formatLevel": (level) => level == 1 ? '' : '_' + (level - 2)
+		}
+	},
+	"deprecated":
+	{
+		"ogPathBuilder": (ogStr,level) => level > 0 ? (ogStr.contains('original') ? this.etc.tree.ogPathBuilder(ogStr + this.etc.tree.formatLevel(level),(level - 1)) : this.etc.tree.ogPathBuilder('original' + this.etc.tree.formatLevel(level), (level - 1))) : ogStr
+	}
+}

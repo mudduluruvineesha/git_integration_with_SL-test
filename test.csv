@@ -1,0 +1,13 @@
+{"Employee ID":"3","Employee Name":"Satish Parikh","Direct Manager ID":"","management chain id":"","Stop":"Top"}
+{"Employee ID":"1","Employee Name":"John Smith","Direct Manager ID":"11","management chain id":"11,3","Stop":"More"}
+{"Employee ID":"13","Employee Name":"Elli Fitzgerald","Direct Manager ID":"12","management chain id":"12,15","Stop":"More"}
+{"Employee ID":"9","Employee Name":"Amber Jackson","Direct Manager ID":"3","management chain id":"3","Stop":"Top"}
+{"Employee ID":"7","Employee Name":"Bill Nye","Direct Manager ID":"3","management chain id":"3","Stop":"Top"}
+{"Employee ID":"11","Employee Name":"Elon Gates","Direct Manager ID":"3","management chain id":"3","Stop":"Top"}
+{"Employee ID":"5","Employee Name":"Eli Manning","Direct Manager ID":"4","management chain id":"4,8","Stop":"More"}
+{"Employee ID":"10","Employee Name":"Luong Phung","Direct Manager ID":"6","management chain id":"6,9","Stop":"More"}
+{"Employee ID":"4","Employee Name":"Makayla Lemon","Direct Manager ID":"8","management chain id":"8,9","Stop":"More"}
+{"Employee ID":"2","Employee Name":"Sally Jones","Direct Manager ID":"8","management chain id":"8,9","Stop":"More"}
+{"Employee ID":"6","Employee Name":"George Carlin","Direct Manager ID":"9","management chain id":"9,3","Stop":"More"}
+{"Employee ID":"8","Employee Name":"Jerome Stills","Direct Manager ID":"9","management chain id":"9,3","Stop":"More"}
+{"Employee ID":"12","Employee Name":"Natalie Portman","Direct Manager ID":"Missing","management chain id":"Missing","Stop":"Top"}

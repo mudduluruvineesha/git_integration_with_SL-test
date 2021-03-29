@@ -1,0 +1,23 @@
+{
+    "job_class": "PipelineJob",
+    "job_name": "usecase_2 task",
+    "note": "",
+    "parameters": {
+        "enabled": true,
+        "execution_timeout": null,
+        "include_external_urls": true,
+        "job_alias": null,
+        "job_type": "standard",
+        "llfeed_token": "bXk9wk7sEweVVoUBcheciDORnsr4nSdZ",
+        "max_failures": 10,
+        "max_in_flight": 200,
+        "notification": {
+            "recipients": null
+        },
+        "pipeline_path": "usecase_2_partitionid",
+        "snaplex_path": "TriggerCloudplex"
+    },
+    "schedule": {},
+    "trigger": {},
+    "trigger_type": "ScheduleTrigger"
+}
